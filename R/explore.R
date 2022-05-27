@@ -1,10 +1,5 @@
 explore <- function(x) {
-  print("class= ")
-  class(x)
-
-  print("dimensions= ")
-  dim(x)
-
-  print("column names= ")
-  colnames(x)
+  data.frame(class= class(x),
+  dimensions= dim(x),
+  columnNames= colnames(x))
 }

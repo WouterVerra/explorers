@@ -1,8 +1,9 @@
 exploreNa <- function(data) {
-  numbers <- ncol(flights)
+  numbers <- ncol(data)
   numbers <- 1:numbers
-  for (numbers in flights) {
-    flights_NA <- flights %>% filter(is.na(numbers))
-    flights_NA %>% count()
+  names <- colnames(data)
+  for (i in numbers) {
+    out <-paste(names[i], "=", sum(is.na(data[i])))
+    print(out)
   }
 }
