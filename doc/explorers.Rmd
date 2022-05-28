@@ -1,0 +1,27 @@
+---
+title: "explorers"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{explorers}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(explorers)
+```
+
+The explore function takes my most used functions when exploring a new dataframe and lists the output from 1 command. 
+
+The NAcol function is another exploratory function which finds how many NA values are present in every column of a dataframe. 
+
+The NArow function is also an exploratory function that finds how many NA values are present in every row of a dataframe. 
+
+The last function of this package is the replace function which replaces an old value to a new value inside of a specified column of a dataframe. 
