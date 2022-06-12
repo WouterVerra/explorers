@@ -10,7 +10,7 @@
 #' assists=c(6, NA, 7, NA, 7, 9),
 #' team=c('A', 'A', 'A', NA, 'C', 'C'))
 #' explore(data)
-exploreNa <- function(data) {
+NAcol <- function(data) {
   numbers <- ncol(data)
   numbers <- 1:numbers
   names <- colnames(data)
